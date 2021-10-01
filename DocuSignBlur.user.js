@@ -37,10 +37,15 @@ function blurManualReview() {
     blur($('.manualreview-container').children('div').eq(1));
 }
 
+function blurPhoneNumber() {
+    blur($(":input#phone_input[data-qa~=jtm-sms-input]"), ".2rem");
+}
+
 function mutationHandler(mutationRecords) {
     blurIDVerification();
     blurIDEvidence();
     blurManualReview();
+    blurPhoneNumber();
 }
 
 // Select the node that will be observed for mutations
@@ -53,10 +58,10 @@ const observer = new MutationObserver(mutationHandler);
 observer.observe(targetNode, obsConfig);
 
 // Blur filter
-function blur(element) {
+function blur(element, blurRatio = ".3rem") {
     if (element == null) {
         return;
     }
-    element.css("filter", "blur(.3rem)")
+    element.css("filter", "blur("+blurRatio+")")
 }
 
