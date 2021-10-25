@@ -4,7 +4,7 @@
 // @author       Cyril Thirion
 // @namespace    https://docusign.com/
 // @version      0.6
-// @updateURL    https://github.com/cyrilthirion/DocuSignBlur/blob/main/DocuBlur.user.js
+// @updateURL    https://github.com/cyrilthirion/DocuSignBlur/blob/main/DocuSignBlur.user.js
 // @supportURL   https://github.com/cyrilthirion/DocuSignBlur/issues
 // @include      https://*.docusign.com/documents/details/*
 // @include      https://identity*.docusign.net/*
