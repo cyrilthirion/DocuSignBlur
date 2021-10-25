@@ -3,8 +3,8 @@
 // @description  Blur for DocuSign Identify products: ID Verification, ID Evidence, etc.
 // @author       Cyril Thirion
 // @namespace    https://docusign.com/
-// @version      0.6
-// @updateURL    https://github.com/cyrilthirion/DocuSignBlur/blob/main/DocuSignBlur.user.js
+// @version      0.7
+// @updateURL    https://github.com/cyrilthirion/DocuSignBlur/raw/main/DocuSignBlur.user.js
 // @supportURL   https://github.com/cyrilthirion/DocuSignBlur/issues
 // @include      https://*.docusign.com/documents/details/*
 // @include      https://identity*.docusign.net/*
