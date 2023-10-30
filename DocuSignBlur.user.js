@@ -3,7 +3,7 @@
 // @description  Blur for DocuSign Identify products: ID Verification, ID Evidence, etc.
 // @author       Cyril Thirion
 // @namespace    https://docusign.com/
-// @version      0.7
+// @version      0.8
 // @updateURL    https://github.com/cyrilthirion/DocuSignBlur/raw/main/DocuSignBlur.user.js
 // @supportURL   https://github.com/cyrilthirion/DocuSignBlur/issues
 // @include      https://*.docusign.com/documents/details/*
@@ -20,6 +20,10 @@ function blurIDVerification() {
     blur($("div.camera_inner"));
     // Upload Review ID
     blur($("img[alt='preview image']"));
+    
+    //Onfido image & PDF viewer
+    blur($("span[data-onfido-qa~='image-viewer']"));
+    blur($("div[data-onfido-qa~='pdf-viewer']"));
 }
 
 function blurIDEvidence() {
@@ -27,6 +31,7 @@ function blurIDEvidence() {
     blur($("img[data-qa~='id-img-front']"));
     blur($("img[data-qa~='id-img-back']"));
     blur($("dt[data-qa~='date-of-birth']").next());
+    blur($("dt[data-qa~='id-number']").next());
     blur($("dt[data-qa~='issue-date']").next());
     blur($("dt[data-qa~='expiry-date']").next());
     blur($("dt[data-qa~='machine-readable-zone']").next());
