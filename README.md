@@ -1,3 +1,7 @@
+> [!WARNING]  
+> [DEPRECATED] Refer to a simpler version leveraging userscript to blur PII https://github.com/cyrilthirion/DocusignBlurCSS
+
+
 # DocuSignBlur
 Blur your PII in DocuSign for your Demos
 
